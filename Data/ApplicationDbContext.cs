@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RazorMoviesVincentA55.Models;
 
 namespace RazorMoviesVincentA55.Data
 {
@@ -12,5 +13,6 @@ namespace RazorMoviesVincentA55.Data
             : base(options)
         {
         }
+        public DbSet<RazorMoviesVincentA55.Models.Movie> Movie { get; set; }
     }
 }
